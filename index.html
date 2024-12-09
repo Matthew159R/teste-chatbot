@@ -3,6 +3,7 @@
   <head>
     <title>Título da página</title>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="media-src 'self' http://portal.der.mg.gov.br;">
   </head>
   <body>
     <h1>Teste</h1>
@@ -21,15 +22,8 @@
 </script>
 
   </body>
-Para permitir que o vídeo seja carregado corretamente, você precisará adicionar uma meta tag para permitir o domínio específico no media-src da política CSP. Como o vídeo está sendo carregado via http, é necessário permitir explicitamente esse protocolo no media-src.
 
-Aqui está um exemplo de como a meta tag poderia ser configurada:
 
-<meta http-equiv="Content-Security-Policy" content="media-src 'self' http://portal.der.mg.gov.br;">
-
-Essa tag permite que o conteúdo de mídia, como vídeos, seja carregado do seu domínio ('self') e também do domínio http://portal.der.mg.gov.br.
-
-Se você já tiver uma política CSP configurada no seu site, adicione http://portal.der.mg.gov.br à diretiva media-src para permitir que o vídeo seja carregado. Certifique-se de que essa alteração esteja em conformidade com a segurança geral do seu site.
 
 
 
