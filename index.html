@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Teste</h1>
+
+<script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+<script>
+    (function () {
+        window.onload = function () {
+            new BlipChat()
+                .withAppKey('dmluaXRlc3RlMjpiYjMzZmFlZS1kMzY0LTRmODUtYTM1OS1iM2Q5MTg2NGQ4YTE=')
+                .withButton({"color":"#0096fa","icon":""})
+                .withCustomCommonUrl('https://vinicius-fernandes-ua5n7.chat.blip.ai/')
+                .build();
+        }
+    })();
+</script>
+  </body>
+
+
+</html>
